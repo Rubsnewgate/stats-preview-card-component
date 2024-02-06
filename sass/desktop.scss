@@ -1,0 +1,62 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 900px;
+	height: 450px;
+	font-family: $primary-font;
+	background-color: $dark-desaturated-blue;
+	border-radius: 10px;
+}
+
+// Company Information Section
+.analytics-info {
+	@include flexbox(column, center, start, 20px);
+	padding: 50px;
+}
+.analytics-info__title {
+	margin: 0;
+	font-size: $lg-size;
+	color: $white;
+	span {
+		color: $soft-violet;
+	}
+}
+.analytics-info__description {
+	margin: 0;
+	font-size: $sm-size;
+	line-height: 1.8;
+	color: $slightly-transparent-white;
+}
+.analytics-info__statistics {
+	@include flexbox(row, space-between, center,);
+	width: 100%;
+}
+.company-statistics {
+	h3 {
+		font-size: $md-size;
+		color: $white;
+	}
+	p {
+		margin: 0;
+		font-size: $sm-size;
+		color: $slightly-transparent-white;
+	}
+}
+
+// Company Hero Section
+.analytics-hero {
+	position: relative;
+	background-image: url(../../assets/img/image-header-desktop.jpg);
+	background-size: cover;
+	border-radius: 0 10px 10px 0;
+}
+.analytics-hero::after {
+	position: absolute;
+	content: '';
+	inset: 0;
+	background-color: rgba(170, 92, 219, 0.4);
+	border-radius: 0 10px 10px 0;
+}

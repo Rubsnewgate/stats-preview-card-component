@@ -1,0 +1,19 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	width: 720px;
+}
+
+// Company Information Section
+.analytics-info {
+	padding: 20px 50px;
+}
+.analytics-info__title {
+	font-size: $lg-size-mobile;
+}
+
+// Company Hero Section
+.analytics-hero {
+	background-position: top;
+}
