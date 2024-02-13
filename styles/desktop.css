@@ -12,9 +12,15 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
+  padding: 50px 10px;
   background-color: hsl(233, 47%, 7%);
 }
 
+@media screen and (max-width: 541px) {
+  body {
+    height: auto;
+  }
+}
 .main-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
