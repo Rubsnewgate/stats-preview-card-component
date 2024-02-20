@@ -9,40 +9,40 @@
 }
 
 // Company Information Section
-.analytics-info {
+.info {
 	padding: 10px;
 	order: 2;
 }
-.analytics-info__title {
+.info__title {
 	font-size: $lg-size-mobile;
 	text-align: center;
 }
-.analytics-info__description {
+.info__description {
 	line-height: 1.6;
 	text-align: center;
 }
-.analytics-info__statistics {
+.info__statistics {
 	@include flexbox(column, center, center, 10px);
 	text-align: center;
 }
-.company--statistics {
-	h3 {
+.company-statistics {
+	.quantity {
 		margin: 0;
 	}
 }
 
 // Company Hero Section
-.analytics-hero {
+.hero {
 	width: 100%;
 	height: 100%;
 	order: 1;
 	background-image: url(../assets/img/image-header-mobile.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	border-radius: 10px 10px 0 0;
-}
-.analytics-hero::after {
-	border-radius: 10px 10px 0 0;
+	&::after {
+		border-radius: 10px 10px 0 0;
+	}
 }
 
 // Breakpoints
@@ -50,7 +50,7 @@
 	.main-wrapper {
 		width: 400px;
 	}
-	.analytics-info {
+	.info {
 		padding: 20px 10px;
 	}
 }

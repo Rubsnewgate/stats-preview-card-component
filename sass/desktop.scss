@@ -12,11 +12,11 @@
 }
 
 // Company Information Section
-.analytics-info {
+.info {
 	@include flexbox(column, center, start, 20px);
 	padding: 50px;
 }
-.analytics-info__title {
+.info__title {
 	margin: 0;
 	font-size: $lg-size;
 	color: $white;
@@ -24,39 +24,43 @@
 		color: $soft-violet;
 	}
 }
-.analytics-info__description {
+.info__description {
 	margin: 0;
 	font-size: $sm-size;
 	line-height: 1.8;
 	color: $slightly-transparent-white;
 }
-.analytics-info__statistics {
-	@include flexbox(row, space-between, center,);
+.info__statistics {
+	@include flexbox(row, space-between, center);
 	width: 100%;
+	margin-top: 50px;
 }
 .company-statistics {
-	h3 {
+	@include flexbox(column, null, null, 10px);
+	.quantity {
 		font-size: $md-size;
+		font-weight: $bold;
 		color: $white;
 	}
-	p {
+	.text {
 		margin: 0;
 		font-size: $sm-size;
+		text-transform: uppercase;
 		color: $slightly-transparent-white;
 	}
 }
 
 // Company Hero Section
-.analytics-hero {
+.hero {
 	position: relative;
 	background-image: url(../assets/img/image-header-desktop.jpg);
 	background-size: cover;
 	border-radius: 0 10px 10px 0;
-}
-.analytics-hero::after {
-	position: absolute;
-	content: '';
-	inset: 0;
-	background-color: rgba(170, 92, 219, 0.4);
-	border-radius: 0 10px 10px 0;
+	&::after {
+		position: absolute;
+		content: '';
+		inset: 0;
+		background-color: hsla(277, 71%, 29%, 0.6);
+		border-radius: 0 10px 10px 0;
+	}
 }

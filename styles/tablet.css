@@ -25,15 +25,15 @@ body {
   width: 720px;
 }
 
-.analytics-info {
+.info {
   padding: 20px 50px;
 }
 
-.analytics-info__title {
+.info__title {
   font-size: 3rem;
 }
 
-.analytics-hero {
+.hero {
   background-position: top;
 }
 
