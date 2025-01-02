@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/guide.scss","../sass/tablet.scss"],"names":[],"mappings":"AAwBA;EACC;;;AAED;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA,kBApCgB;;;AAiDjB;EACC;IACC;;;ACjDF;EACC;;;AAID;EACC;;;AAED;EACC,WDKgB;;;ACDjB;EACC","file":"tablet.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/guide.sass","../sass/tablet.sass"],"names":[],"mappings":"AAwBA;EACC;;;AAED;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA,kBApCgB;;;ACEjB;EACC;;;AAGD;EACC;;AAEA;EACC,WDMe;;;ACHjB;EACC","file":"tablet.css"}

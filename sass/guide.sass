@@ -1,0 +1,46 @@
+// primary Colors
+$very-dark-blue: hsl(233, 47%, 7%)
+$dark-desaturated-blue: hsl(244, 38%, 16%)
+$soft-violet: hsl(277, 64%, 61%)
+
+// secondary Colors
+$white: hsl(0, 0%, 100%)
+$slightly-transparent-white: hsla(0, 0%, 100%, 0.75)
+
+// typography
+$primary-font: 'Inter', sans-serif
+$secondary-font: 'Lexend Deca', sans-serif
+
+// font-sizes
+$sm-size: 1.5rem
+$md-size: 2.2rem
+$lg-size: 3.2rem
+$lg-size-mobile: 3rem
+
+// font-weights
+$regular: 400
+$bold: 700
+
+// general resets
+*
+	box-sizing: border-box
+
+html
+	font-size: 62.5%
+
+body
+	display: grid
+	place-content: center
+	width: 100%
+	min-height: 100vh
+	margin: 0
+	padding: 20px
+	background-color: $very-dark-blue
+
+// mixins
+@mixin flexbox($direction:null, $justify:null, $align:null, $gap:null)
+	display: flex
+	flex-direction: $direction
+	justify-content: $justify
+	align-items: $align
+	gap: $gap

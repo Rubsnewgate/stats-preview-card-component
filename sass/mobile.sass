@@ -1,0 +1,49 @@
+@use 'guide.sass'
+
+// main container
+.main-wrapper
+	grid-template-columns: 1fr
+	grid-template-rows: 1fr 2fr
+	width: 100%
+	height: 700px
+
+// company information section
+.info
+	padding: 10px
+	order: 2
+
+	&__title
+		font-size: guide.$lg-size-mobile
+		text-align: center
+
+	&__description
+		line-height: 1.6
+		text-align: center
+
+	&__statistics
+		@include guide.flexbox(column, center, center, 10px)
+		text-align: center
+
+.company-statistics
+	.quantity
+		margin: 0
+
+// company hero section
+.hero
+	width: 100%
+	height: 100%
+	order: 1
+	background-image: url(../assets/img/image-header-mobile.jpg)
+	background-size: cover
+	background-position: top
+	border-radius: 10px 10px 0 0
+	&::after
+		border-radius: 10px 10px 0 0
+
+// breakpoints
+@media screen and (width: 540px)
+	.main-wrapper
+		width: 400px
+
+	.info
+		padding: 20px 10px
