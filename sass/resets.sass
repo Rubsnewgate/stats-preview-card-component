@@ -1,43 +1,37 @@
-// primary Colors
+// Primary colors
 $very-dark-blue: hsl(233, 47%, 7%)
 $dark-desaturated-blue: hsl(244, 38%, 16%)
 $soft-violet: hsl(277, 64%, 61%)
 
-// secondary Colors
+// Secondary colors
 $white: hsl(0, 0%, 100%)
 $slightly-transparent-white: hsla(0, 0%, 100%, 0.75)
 
-// typography
+// Typography and font settings
 $primary-font: 'Inter', sans-serif
 $secondary-font: 'Lexend Deca', sans-serif
 
-// font-sizes
-$sm-size: 1.5rem
-$md-size: 2.2rem
-$lg-size: 3.2rem
-$lg-size-mobile: 3rem
+$sm-size: 1rem
+$md-size: 1.5rem
+$lg-size: 2rem
 
-// font-weights
 $regular: 400
 $bold: 700
 
-// general resets
-*
+// Resets
+*, *::before, *::after
+	margin: 0
 	box-sizing: border-box
-
-html
-	font-size: 62.5%
 
 body
 	display: grid
 	place-content: center
 	width: 100%
 	min-height: 100vh
-	margin: 0
-	padding: 20px
+	padding: calc(0.5rem + 1.5625vw)
 	background-color: $very-dark-blue
 
-// mixins
+// Tools
 @mixin flexbox($direction:null, $justify:null, $align:null, $gap:null)
 	display: flex
 	flex-direction: $direction

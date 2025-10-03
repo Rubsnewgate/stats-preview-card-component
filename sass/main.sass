@@ -1,0 +1,100 @@
+@use 'resets.sass'
+
+// Main container
+.card
+	display: grid
+	grid-template-columns: 1fr
+	grid-template-rows: 1fr 2fr
+	width: min(56.25rem, 100%)
+	height: 43.75rem
+	margin: 0 auto
+	font-family: resets.$primary-font
+	background-color: resets.$dark-desaturated-blue
+	border-radius: 0.5rem
+
+// Introduction section
+.introduction
+	@include resets.flexbox(column, center, start, 1.25rem)
+	padding: 0.5rem
+	order: 2
+
+	&__title
+		font-size: resets.$lg-size
+		text-align: center
+		color: resets.$white
+
+		span
+			color: resets.$soft-violet
+
+	&__description
+		font-size: resets.$sm-size
+		text-align: center
+		color: resets.$slightly-transparent-white
+
+	&__statistics
+		@include resets.flexbox(row, center, center, 1.25rem)
+		flex-wrap: wrap
+		width: 100%
+		text-align: center
+
+.stats
+	@include resets.flexbox(column, null, null, 0.5rem)
+	flex: auto
+	width: 13.75rem
+	height: 3.75rem
+
+	.quantity
+		font-size: resets.$md-size
+		font-weight: resets.$bold
+		color: resets.$white
+
+	.text
+		font-size: resets.$sm-size
+		text-transform: uppercase
+		color: resets.$slightly-transparent-white
+
+// Hero
+.hero
+	position: relative
+	width: 100%
+	height: 100%
+	order: 1
+	background-image: url('../assets/img/header-mobile.jpg')
+	background-size: cover
+	background-position: top
+	border-radius: 0.5rem 0.5rem 0 0
+
+	&::after
+		position: absolute
+		content: ''
+		inset: 0
+		background-color: hsla(277, 71%, 29%, 0.4)
+		border-radius: 0.5rem 0.5rem 0 0
+
+
+// Media Queries
+@media screen and (min-width: 47.875rem)
+	.card
+		grid-template-columns: repeat(2, 1fr)
+		grid-template-rows: auto
+		height: 28.125rem
+
+	.introduction
+		padding: 3.25rem
+
+		&__statistics
+			@include resets.flexbox(row, space-between, center, 0.5rem)
+			flex-wrap: nowrap
+			width: 100%
+			margin-block-start: 3.25rem
+
+			.stats
+				width: auto
+				height: auto
+
+	.hero
+		background-image: url('../assets/img/header-desktop.jpg')
+		border-radius: 0.5rem 0 0 0.5rem
+
+		&::after
+			border-radius: 0.5rem 0 0 0.5rem
